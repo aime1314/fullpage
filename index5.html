@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>你我贷客户端下载</title>
+<link href="http://static2.niwodai.com/Public/Static/201404/css/common.css?v=2015042811.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/webdownstyle.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://static2.niwodai.com/Public/Static/201404/js/common.js?v=2015042811.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		//sectionsColor: ['', '#ff9287', '#6376e6', '#b7e04f','#00c7ff','#ff7db7','#5463f3','#ffef43'],
+		anchors: ['page1', 'page2', 'page3', 'page4','page5','page6','page7','page8'],
+		navigation: true,
+		afterLoad: function(anchorLink, index){
+			if(index == 1 ){
+				$('.section1 .no-l').delay(200).animate({
+					left: '-2%'
+				}, 1000, 'easeOutExpo');
+				
+				$('.section1 .no-r').delay(200).animate({
+					right: '-1%'
+				}, 1100, 'easeOutExpo');
+				$(".menuDiv").delay(0).animate({
+					top:'0'	
+				},0,'easeOutExpo');
+			}
+			if(index == 2 ){
+				$('.section2 .no-l').delay(500).animate({
+					left: '-4%'
+				}, 1500, 'easeOutExpo');
+				
+				$('.section2 .no-r').delay(500).animate({
+					right: '20%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 3){
+				$('.section3 .no-l').delay(500).animate({
+					left: '0%'
+				}, 1500, 'easeOutExpo');
+				
+				$('.section3 .no-r').delay(500).animate({
+					right: '6%'
+				}, 1300, 'easeOutExpo');
+				$('.section3 .feijiDiv').delay(200).animate({
+					right: '37%'
+				}, 900, 'easeOutExpo');
+			}
+			if(index == 4){
+				$('.section4 .no-l').delay(500).animate({
+					left: '-3%'
+				}, 1500, 'easeOutExpo');
+				
+				$('.section4 .no-r').delay(500).animate({
+					right: '12%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 5){
+				$('.section5 .no-l').delay(500).animate({
+					left: '0%'
+				}, 1500, 'easeOutExpo');
+				
+				$('.section5 .no-r').delay(500).animate({
+					right: '3%'
+				}, 1500, 'easeOutExpo');
+				$('.section5 .personCon').delay(200).animate({
+					left: '51%',
+					top:'17%'
+				}, 900, 'easeOutExpo');
+			}
+			if(index == 6){
+				$('.section6 .no-l').delay(500).animate({
+					left: '-3%'
+				}, 1500, 'easeOutExpo');
+				
+				$('.section6 .no-r').delay(500).animate({
+					right: '20%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 7){
+				$('.section7 .no-l').delay(500).animate({
+					left: '-4%'
+				}, 1500, 'easeOutExpo');
+				
+				$('.section7 .no-r').delay(500).animate({
+					right: '-2%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 8){
+				$('.section8 .no8Con').fadeIn(2000);
+				$('.footDiv').css({'bottom':'0'});
+			}
+		},
+		onLeave: function(index, direction){
+			if(index == '1'){
+				$('.section1 .no-l').delay(500).animate({
+					left: '-120%'
+				}, 1500, 'easeOutExpo');
+				$('.section1 .no-r').delay(500).animate({
+					right: '-120%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == '2'){
+				$('.section2 .no-l').delay(500).animate({
+					left: '-120%'
+				}, 1500, 'easeOutExpo');
+				$('.section2 .no-r').delay(500).animate({
+					right: '-120%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == '3'){
+				$('.section3 .no-l').delay(500).animate({
+					left: '-120%'
+				}, 1500, 'easeOutExpo');
+				$('.section3 .no-r').delay(500).animate({
+					right: '-120%'
+				}, 1500, 'easeOutExpo');
+				$('.section3 .feijiDiv').delay(500).animate({
+					right: '-120%'
+				}, 1500, 'easeOutExpo');
+				
+			}
+			if(index == '4'){
+				$('.section4 .no-l').delay(500).animate({
+					left: '-120%'
+				}, 1500, 'easeOutExpo');
+				$('.section4 .no-r').delay(500).animate({
+					right: '-120%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == '5'){
+				$('.section5 .no-l').delay(500).animate({
+					left: '-120%'
+				}, 1500, 'easeOutExpo');
+				$('.section5 .no-r').delay(500).animate({
+					right: '-120%'
+				}, 1500, 'easeOutExpo');
+				$('.section5 .personCon').delay(200).animate({
+					left: '-120%',
+					top:'190%'
+				}, 900, 'easeOutExpo');
+			}
+			if(index == '6'){
+				$('.section6 .no-l').delay(500).animate({
+					left: '-120%'
+				}, 1500, 'easeOutExpo');
+				$('.section6 .no-r').delay(500).animate({
+					right: '-120%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == '7'){
+				$('.section7 .no-l').delay(500).animate({
+					left: '-120%'
+				}, 1500, 'easeOutExpo');
+				$('.section7 .no-r').delay(500).animate({
+					right: '-120%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == '8'){
+				$('.section8 .no8Con').fadeOut(2000);
+			}
+		}
+	});
+
+});
+</script>
+</head>
+
+<body>
+	<div id="dowebok">
+		<div class="section section1">
+        <div class="menuDiv">
+      <div class="niwdoawi_top mw_1180">
+    <div class="header w1190 clearfix">
+          <div class="fl tel"> <em class="fs_14 mr_5 tel_ico">客服热线</em><i class="aril">400-7910-888</i> <span class="iphone"><i></i><a href="http://www.niwodai.com/phoneDownLoad.do" target="_blank">手机客户端</a></span> <span class="hover_sina"> <a href="http://weibo.com/niwodai" target="_blank"></a> </span> <span class="hover_weixin toptk">
+            <div class="tk" style="display:none;"> </div>
+            </span> </div>
+          <div class="fr login">
+        <div class='login_bt'> <a href="https://member.niwodai.com/login.html" rel="nofollow" title="登录" class="fff">登录</a> <a href="https://member.niwodai.com/register.html" rel="nofollow" title="注册" class="fff">注册</a> </div>
+        <dl>
+              <dt><a href="https://member.niwodai.com/member/accountDetail.do" title="账户中心" rel="nofollow" class="txnone">账户中心</a></dt>
+              <dd><a href="https://member.niwodai.com/member/rechargeStep.do" rel="nofollow" title="充值">充值</a></dd>
+              <dd><a href="https://member.niwodai.com/member/carry.html" rel="nofollow" title="提现">提现</a></dd>
+              <dd><a href="https://member.niwodai.com/member/myAcceptList.html" rel="nofollow" title="我的投资">我的投资</a></dd>
+              <dd><a href="https://member.niwodai.com/member/borrowingRecord.do" target="_blank" rel="nofollow" title="我的借款">我的借款</a></dd>
+            </dl>
+      </div>
+        </div>
+  </div>
+      <!--登录-->
+      <div class="niwdoawi_center mw_1180">
+    <div class="w1190 logo clearfix"> <a href="http://www.niwodai.com/" title="你我贷，有钱没钱，找你我贷" class="fl pl_20 holiday_logo"><img src="http://static2.niwodai.com/Public/Static/201404/images/logo1200.jpg" width="365" height="52" alt="你我贷"/></a>
+          <div class="fr righ">
+        <ul class="nav clearfix">
+              <li> <a rel="nofollow" href="http://www.niwodai.com/" title="首页" class="one">首页</a> </li>
+              <li class="two"> <a href="https://member.niwodai.com/xiangmu" title="我要投资" class="two">我要投资</a>
+            <dl>
+                  <dd><a href="https://member.niwodai.com/xiangmu/">债权列表</a></dd>
+                  <dd><a href="https://member.niwodai.com/zhuanrang/">转让专区</a></dd>
+                  <dd><a href="https://member.niwodai.com/financial/financialDetail.do">嘉财有道</a></dd>
+                </dl>
+          </li>
+              <li class="rela"> <a href="http://www.niwodai.com/daikuan/dkproduct.html" title="我要借款" class="one">我要借款</a> </li>
+              <li class="two"> <a href="http://www.niwodai.com/about/" title="关于我们" class="two">关于我们</a>
+            <dl>
+                  <dd><a href="http://www.niwodai.com/about/jianjie.html">公司简介</a></dd>
+                  <dd><a href="http://www.niwodai.com/about/managementTeam.html">高管团队</a></dd>
+                  <dd><a href="http://www.niwodai.com/noviceguide">新手启航</a></dd>
+                </dl>
+          </li>
+              <li style="margin-right:0;"> <a href="http://club.niwodai.com" target="_blank" title="社区" class="one">社区 </a> </li>
+            </ul>
+      </div>
+        </div>
+  </div>
+      <!--nav--> 
+    </div>
+			<div class="no-l"><img src="images/no1-l.png"></div>
+	        <div class="no-r"><img src="images/no1-r.png" usemap="#Map">
+              <map name="Map">
+                <area shape="rect" coords="201,231,427,297" href="#">
+                <area shape="rect" coords="201,320,428,386" href="#">
+              </map>
+	        </div>
+		</div>
+		<div class="section section2">
+			<div class="no-l"><img src="images/no2-l.png"></div>
+	        <div class="no-r"><img src="images/no2-r.png"></div>
+		</div>
+		<div class="section section3">
+			<div class="no-l"><img src="images/no3-l.png"></div>
+	        <div class="no-r"><img src="images/no3-r.png"></div>
+            <div class="feijiDiv"><img src="images/no3-bg.png"></div>
+		</div>
+		<div class="section section4">
+			<div class="no-l"><img src="images/no4-l.png"></div>
+	        <div class="no-r"><img src="images/no4-r.png"></div>
+		</div>
+		<div class="section section5">
+			<div class="no-l"><img src="images/no5-l.png"></div>
+	        <div class="no-r"><img src="images/no5-r.png"></div>
+            <div class="personCon"><img src="images/no5-bg.png"></div>
+		</div>
+		<div class="section section6">
+			<div class="no-l"><img src="images/no6-l.png"></div>
+	        <div class="no-r"><img src="images/no6-r.png"></div>
+		</div>
+		<div class="section section7">
+			<div class="no-l"><img src="images/no7-l.png"></div>
+	        <div class="no-r"><img src="images/no7-r.png"></div>
+		</div>
+		<div class="section section8">
+			<div class="no8Con"><img src="images/no8.png" usemap="#Map2">
+              <map name="Map2">
+                <area shape="rect" coords="279,120,517,181" href="#">
+                <area shape="rect" coords="562,123,792,177" href="#">
+              </map>
+			</div>
+            <div class="footDiv">
+<!--foot Start-->
+<div class="h35 clearfix"></div>
+<div class="foot1 wt_1000">
+	<div class="clearfix out">
+    	<div class="l">
+        	<ul class="clearfix fNav">
+            	<li>
+                	<a class="span01" target="_blank" href="http://www.niwodai.com/about/jianjie.html">关于我们</a><br>
+                    <a class="a01" target="_blank" href="http://www.niwodai.com/about/jianjie.html"><i></i>公司简介</a><br>
+                    <a class="a01" target="_blank" href="http://www.niwodai.com/baozhang/info.html"><i></i>业绩报告</a><br>
+                    <a class="a01" target="_blank" href="http://www.niwodai.com/index.do?method=indexStaticPage1Detail&amp;pid=45&amp;artId=1836469355664494&amp;acId=1836469355621260"><i></i>法律法规</a><br>
+                </li>
+                <li>
+                	<a class="span01" target="_blank" href="http://www.niwodai.com/baozhang/">安全保障</a><br>
+                    <a class="a01" target="_blank" href="http://www.niwodai.com/baozhang/"><i></i>本金保障</a><br>
+                    <a class="a01" target="_blank" href="http://www.niwodai.com/baozhang/fengkong.html"><i></i>风控保障</a><br>
+                    <a class="a01" target="_blank" href="http://www.niwodai.com/baozhang/baohu.html"><i></i>账户安全</a><br>
+                </li>
+                <li>
+                	<a class="span01" target="_blank" href="http://www.niwodai.com/help">帮助中心</a><br>
+                    <a class="a01" target="_blank" href="http://www.niwodai.com/help/cjwenti.html"><i></i>如何投资</a><br>
+                    <a class="a01" target="_blank" href="http://www.niwodai.com/help/jiekshenqing.html"><i></i>如何借款</a><br>
+                    <a class="a01" target="_blank" href="http://www.niwodai.com/help/khtzfei.html"><i></i>网站资费</a><br>
+                </li>
+                <li>
+                	<a class="span01" target="_blank" href="http://www.niwodai.com/lianxi/">用心服务</a><br>
+                    <a class="a01" target="_blank" href="http://www.niwodai.com/lianxi/"><i></i>联系我们</a><br>
+                    <a class="a01" target="_blank" href="http://www.niwodai.com/index.do?method=websiteMap"><i></i>网站地图</a><br>
+                    <a class="a01" target="_blank" href="http://www.niwodai.com/exchange/"><i></i>城市网点</a><br>
+                </li>	
+            </ul>
+        </div>
+        <div class="r">
+        	<ul>
+            	<li class="line1"><span class="fs_16 pr_20 fc_3">热线电话</span>(服务时间 09 : 00 - 21 : 00 )</li>
+                <li class="line2"><span class="fs_32 bold fc_6 pr_20">400-7910-888</span></li>
+                <li class="line3 fc_3">关注我们<a rel="nofollow" class="ico" target="_blank" href="http://weibo.com/niwodai"><i class="i_s"></i></a><i onclick="showCon_2()" class="i_q"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footlink footlink1">
+    	<span class="bt">合作伙伴：</span>
+        <a class="fl_img1" href="javascript:;"></a>
+        <a class="fl_img2" href="javascript:;"></a>
+        <a class="fl_img3" href="javascript:;"></a>
+        <a class="fl_img4" href="javascript:;"></a>
+        <a class="fl_img5" href="javascript:;"></a>
+        <a class="fl_img6" href="javascript:;"></a>
+        <a class="fl_img7" href="javascript:;"></a>
+        <a class="fl_img8" href="javascript:;"></a>
+        <a class="fl_img9" href="javascript:;"></a>
+    </div>
+</div>
+<div class="clearfix foot2 wb_1000">
+	<div class="out ff">
+        <div class="line1">
+        	<ul class="lunbo1" style="margin-top: -48px;">
+            <li>
+               	<a target="_blank" href="http://www.niwodai.com/view-xianjinbao/">现金宝</a>丨  
+				<a target="_blank" href="http://www.niwodai.com/view-renrendai/">人人贷</a>丨                
+				<a target="_blank" href="http://www.niwodai.com/view-lujinsuo/">陆金所</a>丨
+				<a target="_blank" href="http://www.niwodai.com/view-paipaidai/">拍拍贷</a>丨
+				<a target="_blank" href="http://www.niwodai.com/view-nanfangjijin/">南方基金</a>丨
+				<a target="_blank" href="http://www.niwodai.com/view-dingqibao/">定期宝</a>丨
+				<a target="_blank" href="http://www.niwodai.com/view-huoqibao/">活期宝</a>丨
+				<a target="_blank" href="http://www.niwodai.com/view-anxindai/">安心贷</a>丨
+                <a target="_blank" href="http://www.niwodai.com/view-youliwang/">有利网</a>丨
+                <a target="_blank" href="http://www.niwodai.com/view-tianhongjijin/">天弘基金</a>丨
+                <a target="_blank" href="http://www.niwodai.com/view-yuebao/">余额宝收益</a>丨
+            </li>
+            <li>
+                <a target="_blank" href="http://www.niwodai.com/view-huobijijin/">货币基金收益排行</a>丨
+                <a target="_blank" href="http://www.niwodai.com/jijingongsi/">基金公司排名</a>丨
+                <a target="_blank" href="http://www.niwodai.com/caijingmingren/">基金经理排名</a>丨
+                <a target="_blank" href="http://www.niwodai.com/zhengquangongsi/">证券公司排名</a>丨
+                <a target="_blank" href="http://www.niwodai.com/jijinchanpin/">基金排名</a>丨
+                <a target="_blank" href="http://www.niwodai.com/qihuogongsi/">期货公司排名</a>丨
+                <a target="_blank" href="http://www.niwodai.com/waihuizhishi/">炒外汇入门</a>丨
+                <a target="_blank" href="http://www.niwodai.com/jijinzhishi/">什么是基金</a>丨
+                <a target="_blank" href="http://www.niwodai.com/licaichanpin/">投资产品排行</a>丨
+                <a target="_blank" href="http://www.niwodai.com/gupiaozhishi/">股票入门基础知识</a>丨
+                <a target="_blank" href="http://www.niwodai.com/wangdaipingtai/">网络贷款平台</a>丨
+            </li>
+			<li>
+        			<a target="_blank" href="http://www.niwodai.com/calc/">贷款计算器</a>丨
+        			<a target="_blank" href="http://www.niwodai.com/exchange/">城市网点</a>丨
+        			<a target="_blank" href="http://www.niwodai.com/calc-shangye/">商业贷款计算器</a>丨
+        			<a target="_blank" href="http://www.niwodai.com/calc-anjie/">按揭贷款计算器</a>丨
+        			<a target="_blank" href="http://www.niwodai.com/calc-gongzi/">工资计算器</a>丨
+        			<a target="_blank" href="http://www.niwodai.com/calc-tiqian/">提前还贷计算器</a>丨
+        			<a target="_blank" href="http://www.niwodai.com/calc-suodesui/">个人所得税计算器</a>丨
+        			<a target="_blank" href="http://www.niwodai.com/calc-chexian/">车险计算器</a>丨
+        			<a target="_blank" href="http://www.niwodai.com/calc-lixi/">利息计算器</a>丨
+        			<a target="_blank" href="http://www.niwodai.com/calc-fenqi/">分期付款计算器</a>
+        			<a target="_blank" href="http://www.niwodai.com/calc-benxi/">等额本息还款计算器</a>丨
+        			<a target="_blank" href="http://www.niwodai.com/calc-cunkuan/">存款计算器</a>丨
+        			<a target="_blank" href="http://www.niwodai.com/calc-zhongguoyinhang/">中国银行贷款计算器</a>丨
+        			<a target="_blank" href="http://www.niwodai.com/calc-gonghang/">工行贷款计算器</a>丨
+        			<a target="_blank" href="http://www.niwodai.com/calc-licai/">投资计算器</a>丨
+        			<a target="_blank" href="http://www.niwodai.com/calc-fuli/">复利计算器</a>
+			</li>
+            </ul>
+            <div style="display:none;">
+			<a href="http://www.niwodai.com/yhlicaichanpin/">银行理财产品</a>
+			<a href="http://www.niwodai.com/yinhangwangdian/">银行网点</a>
+			<a href="http://www.niwodai.com/xinyongka/">信用卡</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-a.html">A</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-b.html">B</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-c.html">C</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-d.html">D</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-e.html">E</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-f.html">F</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-g.html">G</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-h.html">H</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-i.html">I</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-j.html">J</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-k.html">K</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-l.html">L</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-m.html">M</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-n.html">N</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-o.html">O</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-p.html">P</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-q.html">Q</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-r.html">R</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-s.html">S</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-t.html">T</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-u.html">U</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-v.html">V</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-w.html">W</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-x.html">X</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-y.html">Y</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/tags-z.html">Z</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/column.html">栏目列表</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-1.html">文章列表1</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-2.html">文章列表2</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-3.html">文章列表3</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-4-1.html">文章列表4-1</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-4.html">文章列表4</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-5.html">文章列表5</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-6.html">文章列表6</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-7.html">文章列表7</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-8.html">文章列表8</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-9.html">文章列表9</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-10.html">文章列表10</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-11.html">文章列表11</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-12.html">文章列表12</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-13.html">文章列表13</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-14.html">文章列表14</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-15.html">文章列表15</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-16.html">文章列表16</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-35.html">文章列表35</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-36.html">文章列表36</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-37.html">文章列表37</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-38.html">文章列表38</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-39.html">文章列表39</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-40.html">文章列表40</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-41.html">文章列表41</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-42.html">文章列表42</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-43.html">文章列表43</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-44.html">文章列表44</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-45.html">文章列表45</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-46.html">文章列表46</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-47.html">文章列表47</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-48.html">文章列表48</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-49.html">文章列表49</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-50.html">文章列表50</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-51.html">文章列表51</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-52.html">文章列表52</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-53.html">文章列表53</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-54.html">文章列表54</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-55.html">文章列表55</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-56.html">文章列表56</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-57.html">文章列表57</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-58.html">文章列表58</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-59.html">文章列表59</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-60.html">文章列表60</a>
+			<a target="_blank" href="http://www.niwodai.com/sitemap/articlelist-61.html">文章列表61</a>
+            </div>
+        </div>
+        <div class="line2">
+        	Copyright &copy; 2015 你我贷（www.niwodai.com）&#12288;版权所有；市场有风险，投资需谨慎，营造合法、诚信借贷环境。
+        </div>
+        <div class="police">
+        	<a href="http://www.miibeian.gov.cn/" target="_blank" class="img1" rel="nofollow"><img width="70" height="32" src="http://static2.niwodai.com/Public/Static/201404/css/img/px.gif"></a>
+            <a href="https://ss.knet.cn/verifyseal.dll?sn=e14050531010148490qxse000000&amp;comefrom=trust&amp;trustKey=dn&amp;trustValue=www.niwodai.com" target="_blank" class="img2" rel="nofollow"><img width="70" height="32" src="http://static2.niwodai.com/Public/Static/201404/css/img/px.gif"></a>
+            <a href="http://www.zx110.org/" target="_blank" class="img3" rel="nofollow"><img width="70" height="32" src="http://static2.niwodai.com/Public/Static/201404/css/img/px.gif"></a>
+            <a href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20140808103102625" target="_blank" class="img4" rel="nofollow"><img width="70" height="32" src="http://static2.niwodai.com/Public/Static/201404/css/img/px.gif"></a>
+            <a href="http://net.china.com.cn/" target="_blank" class="img5" rel="nofollow"><img width="70" height="32" src="http://static2.niwodai.com/Public/Static/201404/css/img/px.gif"></a>
+            <a href="http://si.trustutn.org/info?sn=466150127000060949048" target="_blank" class="img6" rel="nofollow"><img width="70" height="32" src="http://static2.niwodai.com/Public/Static/201404/css/img/px.gif"></a>
+            <a href="http://www.anquan.org/authenticate/cert/?site=www.niwodai.com&amp;at=business" target="_blank" class="img7" rel="nofollow"><img width="70" height="32" src="http://static2.niwodai.com/Public/Static/201404/css/img/px.gif"></a>
+        </div>
+    </div>
+</div>
+
+<!-- weixin start -->
+<div class="plusBankBg" style="height: 920px;"></div>
+<div class="plusBank2">
+	<div class="clearfix ewm01">
+		<a onclick="closeAll_2()" class="fr plus_c"></a>
+    	关注你我贷官方微信
+    </div>
+    <div class="ewm02">
+        <img width="430" height="430" src="http://static2.niwodai.com/Public/Static/201404/images/ewm.jpg">
+    </div>
+</div>
+<!-- weixin end -->
+<!--foot End-->
+
+
+</div>
+		</div>
+	</div>
+</body>
+</html>

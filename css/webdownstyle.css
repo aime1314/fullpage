@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+.no-l{float:left; text-align:right;}
+.no-r{float:right; text-align:left;}
+
+.section { text-align: center;}
+.section1 { position: relative; background:#ffed28 url(../images/no1-bg.png) center 120px no-repeat; padding-top:80px;}
+.section1 .no-l{width:50%; min-width:500px; left: -2%;position: relative;  z-index:9}
+.section1 .no-r{width:50%; min-width:500px; right: -1%;position: relative; z-index:5}
+.section1 .menuDiv{position:absolute; top:0; left:0; width:100%;}
+
+.section2 { position: relative;background:#ff9287;}
+.section2 .no-l{width:50%; min-width:500px; left: -120%;position: relative; z-index:9}
+.section2 .no-r{width:50%; min-width:500px; right: -120%;position: relative; z-index:5}
+
+.section3 { position: relative;background:#6376e6;}
+.section3 .no-l{width:50%; min-width:500px; left: -120%;position: relative; z-index:5}
+.section3 .no-r{width:50%; min-width:500px; right: -120%;position: relative; z-index:9}
+.section3 .feijiDiv{position:absolute; right:-120%; top:11%; width:339px; height:142px; z-index:11;}
+
+.section4 { position: relative;background:#b7e04f;}
+.section4 .no-l{width:50%; min-width:500px; left: -120%;position: relative; z-index:5}
+.section4 .no-r{width:50%; min-width:500px; right: -120%;position: relative; z-index:9}
+
+.section5 { position: relative;background:#00c7ff;}
+.section5 .no-l{width:50%; min-width:500px; left: -120%;position: relative; z-index:5}
+.section5 .no-r{width:50%; min-width:500px; right: -120%;position: relative; z-index:9}
+.section5 .personCon{position:absolute; top:190%; left:-120%; width:333px; height:327px; z-index:11;}
+
+
+.section6 { position: relative;background:#ff7db7;}
+.section6 .no-l{width:50%; min-width:500px; left: -120%;position: relative; z-index:5}
+.section6 .no-r{width:50%; min-width:500px; right: -120%;position: relative; z-index:9}
+
+.section7 { position: relative;background:#5463f3 url(../images/no7-bg.png)  top center no-repeat;}
+.section7 .no-l{width:50%; min-width:500px; left: -120%;position: relative; z-index:5}
+.section7 .no-r{width:50%; min-width:500px; right: -120%;position: relative; z-index:9}
+
+
+.section8{position: relative;background:#ffef43;}
+.section8 .no8Con{text-align: center; display:none; padding-bottom:24%}
+.section8 .footDiv{position:absolute; bottom:0; left:0; width:100%;}
+
+@keyframes myfirst
+{
+}
+@-moz-keyframes myfirst
+{
+}
+@-webkit-keyframes myfirst
+{
+}
+@-o-keyframes myfirst
+{
+}
+
+@media screen and (max-width: 1366px) {
+	.section1 .no-l img{width: 71%}
+	.section1 .no-r img{width: 67.5%}
+	.section2 .no-l{ text-align:right;}
+	.section2 .no-l img{width: 65%;}
+	.section2 .no-r img{width: 125%}
+	.section3 .no-l img{width: 60%}
+	.section3 .no-r img{width: 65%}
+/*	.section3 .feijiDiv img{width:%}*/
+	.section4 .no-l img{width: 60%}
+	.section4 .no-r img{width: 95%}
+	.section5 .no-l img{width: 85%}
+	.section5 .personCon img{width: 75%}
+	.section5 .no-r img{width: 55%}
+	.section6 .no-l img{width: 55%}
+	.section6 .no-r img{width: 120%}
+	.section7 .no-l img{width: 50%}
+	.section7 .no-r img{width: 48%}
+	}
